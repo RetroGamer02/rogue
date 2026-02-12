@@ -83,11 +83,7 @@
 
 #include <curses.h> /* AIX requires curses.h be included before term.h */
 
-#if defined(HAVE_TERM_H)
 #include <term.h>
-#elif defined(HAVE_NCURSES_TERM_H)
-#include <ncurses/term.h>
-#endif
 
 #if defined(HAVE_WORKING_FORK)
 #include <sys/wait.h>

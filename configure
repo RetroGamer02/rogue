@@ -4095,7 +4095,7 @@ echo $ECHO_N "checking for working curses... $ECHO_C" >&6; }
 if test "${mp_cv_curses+set}" = set; then
   echo $ECHO_N "(cached) $ECHO_C" >&6
 else
-  LIBS="$LIBS -lcurses"
+  LIBS="$LIBS -lncurses"
         cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
@@ -4150,7 +4150,7 @@ cat >>confdefs.h <<\_ACEOF
 _ACEOF
 
        #AC_DEFINE(HAVE_CURSES_H)
-       CURSES_LIB="-lcurses"
+       CURSES_LIB="-lncurses"
      fi
    fi
    if test ! "$CURSES_LIB"

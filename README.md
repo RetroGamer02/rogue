@@ -174,10 +174,10 @@ make -f Makefile.std
 **Option 2: Direct compilation**
 ```bash
 # Compile directly (may need additional defines)
-gcc -O2 -o rogue *.c -lcurses
+gcc -O2 -o rogue *.c -lncurses
 
 # Or with more defines (see Makefile.std for full list):
-gcc -O2 -DALLSCORES -DSCOREFILE=\"rogue.scr\" -DLOCKFILE=\"rogue.lck\" -o rogue *.c -lcurses
+gcc -O2 -DALLSCORES -DSCOREFILE=\"rogue.scr\" -DLOCKFILE=\"rogue.lck\" -o rogue *.c -lncurses
 ```
 
 **Note**:
