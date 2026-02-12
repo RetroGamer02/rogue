@@ -696,10 +696,8 @@ md_erasechar()
 {
 #ifdef HAVE_ERASECHAR
     return( erasechar() ); /* process erase character */
-#elif defined(VERASE)
-    return(_tty.c_cc[VERASE]); /* process erase character */
 #else
-    return(_tty.sg_erase); /* process erase character */
+    return( '\b' ); /* process erase character */
 #endif
 }
 
@@ -708,10 +706,8 @@ md_killchar()
 {
 #ifdef HAVE_KILLCHAR
     return( killchar() );
-#elif defined(VKILL)
-    return(_tty.c_cc[VKILL]);
 #else
-    return(_tty.sg_kill);
+    return( delch() );
 #endif
 }
 
