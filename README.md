@@ -10,6 +10,9 @@
 
 ## ⚠️ About This Repository ⚠️
 
+**Febuary 2026**
+Added the legacy-ncurses branch for anyone else who wants to run Rogue on for example an i486 running Debian 2.2 where some changes needed to be made to build.
+
 **November 2025**:
 
 I want to express my sincere appreciation to everyone who has contributed to this repository, attempted to fix issues, and forked the project over the years. When I originally created this repository in [July 2016](https://github.com/Davidslv/rogue/releases/tag/5.4.4), I was young and fascinated by this classic game. My primary intention was to archive the codebase for learning purposes, and I never expected the community engagement that followed.
